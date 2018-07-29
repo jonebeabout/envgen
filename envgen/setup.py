@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="envgen",
-    version="0.0.1",
+    version="0.0.2",
     author="Jonathan Beabout",
     author_email="jonebeabout@gmail.com",
     description="A Virtual Environment Generator",
@@ -47,6 +47,7 @@ setuptools.setup(
         'python-vagrant>=0.5.15',
         'pytz>=2018.5',
         'six>=1.11.0',
-        'Werkzeug>=0.14.1'
+        'Werkzeug>=0.14.1',
+        'urllib2'
     ]
 )
