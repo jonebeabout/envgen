@@ -369,10 +369,9 @@ class EnvironmentGenerator:
             return (error,rtn)
         return (1,'No project loaded')        
     
-    def buildEntity(self, name, box_name, os, provider, mem=None, cpu=None, mac=None, vols=None, ports=None, dockerfile=None):
+    def buildEntity(self, name, box_name, os, provider, mem=None, cpu=None, users=None, software=None, mac=None, vols=None, ports=None, dockerfile=None):
         if self.workingEnv:
-            print vols, ports, dockerfile
-            entity = Entity(name,box_name,os,provider,mem=mem,cpu=cpu,mac=mac,vols=vols,ports=ports,dockerfile=dockerfile)
+            entity = Entity(name,box_name,os,provider,mem=mem,cpu=cpu,mac=mac,users=users,software=software,vols=vols,ports=ports,dockerfile=dockerfile)
             self.workingEnv.addEntity(entity)
             return True
         return False

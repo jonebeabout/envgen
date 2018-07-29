@@ -241,7 +241,7 @@ def new_entity_menu():
                 dockerfile_location = raw_input('Where is the dockerfile for ' + name + ' located? [Example: C:/envgen/dockerfile]: ')
             with open(dockerfile_location,'r') as file:
                 dockerfile = file.read()
-    e.buildEntity(name,box,os,provider,mem=mem, cpu=cpu, mac=mac, vols=vols, ports=ports, dockerfile=dockerfile)
+    e.buildEntity(name,box,os,provider,mem=mem, cpu=cpu, mac=mac, users=users, software=software, vols=vols, ports=ports, dockerfile=dockerfile)
     print colorama.Fore.GREEN + 'Entity Built!\n'
     
 def edit_entity_menu():
