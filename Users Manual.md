@@ -53,19 +53,19 @@ The following resources are available through the API:
 1. Projects (http://127.0.0.1:PORT/projects)
     1. GET - list of projects
     2. POST - project name to create a new project (json: {'project':<name>})
-2. Project Operations (http://127.0.0.1:PORT/projects/\<arg\>)
+2. Project Operations (http://127.0.0.1:PORT/projects/<arg\>)
     1. PUT - takes one of the following arguments:
         * 'check' - runs Check Resources and returns errors
         * 'build' - saves configs as defined
         * 'start' - starts environment (This is currently broken as a user needs to define the Hyper-V switch at the command line)
-3. Delete Project (http://127.0.0.1:PORT/projects/del/\<name\>)
+3. Delete Project (http://127.0.0.1:PORT/projects/del/<name\>)
     1. DELETE - deletes project based on name, returns if successful
 4. Host (http://127.0.0.1:PORT/host)
     1. GET - returns hostname, memory utilization, disk space, cpu utilization, and total cpu cores
 5. Entities (http://127.0.0.1:PORT/entities)
     1. GET - returns list of entities in the project (see above list in Interface section)
     2. POST - Define a new entity takes all arguments listed above, returns if successful
-6. Delete Entity (http://127.0.0.1:PORT/entities/del/\<name\>)
+6. Delete Entity (http://127.0.0.1:PORT/entities/del/<name\>)
     1. DELETE - deletes an entity based on its name, returns if successful
     
 ## Library
