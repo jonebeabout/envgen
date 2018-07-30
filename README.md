@@ -16,3 +16,5 @@ A Virtual Network Generator for Educators and Students to enhance simulation and
 * Generate user create scripts for Windows and Unix-based systems
 * Generate puppet manifests to install modules on Unix-based systems
 * Start a virtual environment based on generated Vagrantfiles
+
+## [Supporting Paper](https://drive.google.com/file/d/1vZlZCLe_bY1dCFeHWnKuiiwy8ldz2Er3/view?usp=sharing)
